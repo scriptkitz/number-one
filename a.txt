@@ -1,0 +1,29 @@
+this.testHeader("添加header", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Accept': 'text/plain,text/html,application/json'});
+         this.testReferer("header包含Referer", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Referer':'www.baidu.com'});//测试成功
+
+        this.testAcceptCharset("header包含Accept-Charset", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Accept-Charset': 'iso-8859-5'});
+        this.testAcceptEncoding("header包含Accept-Encoding", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Accept-Encoding': 'compress, gzip'});
+        this.testAcceptRanges("header包含Accept-Ranges", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Accept-Ranges': 'bytes'});
+        this.testAuthorization("header包含Authorization", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Authorization': 'Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=='});
+        this.testConnection("header包含Connection", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Connection': 'close'});
+        this.testCookie("header包含Cookie", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Cookie': '$Version=1; Skin=new;'});
+        this.testContentlength("header包含Content-length", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Content-Length':'50'});
+         this.testContentType("header包含Content-Type", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Content-Type': 'application/x-www-form-urlencoded'});
+         this.testDate("header包含Date", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Date': 'Tue, 15 Nov 2010 08:12:31 GMT'});
+         this.testExpect("header包含Expect", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Expect': '100-continue'});
+         this.testHost("header包含Host", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Host':'http://code.cocoachina.com/download/135449'});//测试失败
+         this.testIfMatch("header包含If-Match", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'If-Match': '737060cd8c284d8af7ad3082f209582d'});//测试失败
+         this.testIfModifiedSince("header包含If-Modified-Since", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'If-Modified-Since': 'Sat, 29 Oct 2010 19:43:31 GMT'});
+         this.testIfNoneMatch("header包含If-None-Match", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'If-None-Match': '“737060cd8c284d8af7ad3082f209582d”'});
+         this.testIfRange("header包含If-Range", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'If-Range': '“737060cd8c284d8af7ad3082f209582d”'});
+         this.testIfUnmodifiedSince("header包含If-Unmodified-Since", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'If-Unmodified-Since': 'Sat, 29 Oct 2010 19:43:31 GMT'});//测试失败
+         this.testMaxForwards("header包含Max-Forwards", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Max-Forwards': '10'});
+         this.testPragma("header包含Pragma: no-cache", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Pragma': 'no-cache'});
+
+         this.testProxyAuthorization("header包含Proxy-Authorization", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Proxy-Authorization': 'Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=='});
+         this.testRange("header包含Range", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Range': 'bytes=500-999'});
+         this.testTE("header包含TE", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'TE': 'trailers,deflate;q=0.5'});
+         this.testUpgrade("header包含Upgrade", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Upgrade': 'HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11'});
+         this.testUserAgent("header包含User-Agent", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'User-Agent':'Mozilla/5.0 (Linux; X11)'});
+         this.testVia("header包含Via", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Via': '1.0 fred, 1.1 nowhere.com (Apache/1.1)'});
+         this.testWarn("header包含Warn", "http://code.cocoachina.com/download/135449", `${rt.env.USER_DATA_PATH}/zipFile.zip`,{'Warn':'199 Miscellaneous warning'});
